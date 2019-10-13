@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>WebIOPi Arm crawler</title>
+        <script type="text/javascript" src="/webiopi.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport"
+				content="width=320,
+					height=480,
+					initial-scale=1.0,
+					minimum-scale=1.0,
+					maximum-scale=2.0,
+					user-scalable=yes" />
+    </head>
+    <body>
+		<div class="monitor">
+			<img class="stream" src="http://192.168.0.19:8080/?action=stream"/>
+		</div>
+		<div class="textarea">
+			<p class="text1">速度 : <output id="output">0</output>　　状態 : <output id="output2">Status</output>　　　Arm crawler</p>
+		</div>
+		<div class="slid">
+			<input type="range" class="slider" min="0" max="10" step="1" value="0" oninput="slid(this.value)"/>
+		</div>
+		<div class="controll">
+			<input type="button" value="左回り" class="left" onClick="left()">
+        	<input type="button" value="前進" class="advance" onClick="advance()">
+			<input type="button" value="停止" class="stop" onClick="stop()">
+			<input type="button" value="後進" class="reverse" onClick="reverse()">
+			<input type="button" value="右回り" class="right" onClick="right()">
+			<input type="button" value="終了" class="kill" onClick="kill()">
+		</div>
+		
+    </body>
+
+</html>

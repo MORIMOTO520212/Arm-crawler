@@ -1,0 +1,122 @@
+body{
+    background: #bae3f9;
+}
+
+img.stream{
+    width: 640px;
+    height: 480px;
+}
+
+div.monitor{
+    width: 640px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000000;
+}
+
+div.controll{
+    text-align:center;
+    margin-top: 50px;
+    border-left: 390px;
+    border-right: 390px;
+    border-bottom: 50px;
+}
+
+.advance{
+    background: #65AADD;
+    padding: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 56px;
+}
+.reverse{
+    background: #65AADD;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    right: 56px;
+}
+.left{
+    background: #65AADD;
+    padding: 10px;
+    position: relative;
+    left: 55px;
+}
+.right{
+    background: #65AADD;
+    padding: 10px;
+    position: relative;
+    right: 55px;
+}
+.stop{
+    background: #65AADD;
+    padding: 10px;
+}
+.kill{
+    background: #65AADD;
+    padding: 10px 17px 10px 17px;
+    position: relative;
+    top: 50px;
+    right: 125px;
+}
+
+[type="range"] {
+    margin-top:25%;
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+            transform:rotate(-90deg);
+}
+
+div.slid{
+    text-align:center;
+}
+
+.slider{
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    top: 92px;
+    right: 150px;
+}
+
+div.textarea{
+    text-align: center;
+    width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #34eba5;
+}
+
+p.text1{
+    margin: 0px 0px 0px 16px;
+
+}
+
+@media only screen and (max-device-width: 480px) {
+    div.monitor{
+        width: 280px;
+        height: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #000000;
+    }
+    div.textarea{
+        text-align: center;
+        width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+        background: #34eba5;
+    }
+    img.stream{
+        width: 280px;
+        height: 210px;
+    }
+    div.controll{
+        text-align:center;
+        margin-top: 50px;
+        border-left: 390px;
+        border-right: 390px;
+        border-bottom: 50px;
+    }
+}
