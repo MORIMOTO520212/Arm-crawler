@@ -27,8 +27,8 @@ GPIO.setup(ENB, GPIO.OUT)
 #出力パワー
 pww = GPIO.PWM(ENA, 60)
 pww2 = GPIO.PWM(ENB, 60)
-pww.start(0)
-pww2.start(0)
+pww.start(0) # デューティー比
+pww2.start(0) # デューティー比
 
 @webiopi.macro
 def advance(data): # 前進
